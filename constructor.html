@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор - Хлебозавод №1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=100&h=100&fit=crop" alt="Логотип"></a></div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="catalog.html" class="nav-link">Каталог</a>
+                <a href="constructor.html" class="nav-link active">Конструктор хлеба</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="cart.html" class="nav-link">Корзина</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h2 class="section-title">Конструктор хлеба</h2>
+        <div class="constructor-preview">
+            <img src="https://pp.vk.me/c638324/v638324406/1ff4f/mlEoLxtFrTg.jpg" alt="Примерное изображение хлеба">
+        </div>
+
+        <div class="constructor-form">
+            <div class="form-label">Выберите форму хлеба:</div>
+            <div class="shape-grid">
+                <label class="shape-card">
+                    <input type="radio" name="shape" checked>
+                    <div class="shape-visual"><img src="https://hlebda.ru/wp-content/uploads/2020/07/%D1%81%D0%B5%D1%80%D1%8B%D0%B9-%D0%BA%D1%80%D1%83%D0%B3%D0%BB%D1%8B%D0%B9.jpg" alt="Круглый"></div>
+                    <div class="shape-name">Круглый</div>
+                </label>
+                <label class="shape-card">
+                    <input type="radio" name="shape">
+                    <div class="shape-visual"><img src="https://dabudetxleb.ru/uploads/s/l/e/q/leqchexqpaxs/img/autocrop/649fdb96e57f971eaa275ae78fb38b0f.jpg" alt="Квадратный"></div>
+                    <div class="shape-name">Квадратный</div>
+                </label>
+                <label class="shape-card">
+                    <input type="radio" name="shape">
+                    <div class="shape-visual"><img src="https://ic.pics.livejournal.com/irina_co/66663678/8150556/8150556_original.jpg" alt="Багет"></div>
+                    <div class="shape-name">Багет</div>
+                </label>
+                <label class="shape-card">
+                    <input type="radio" name="shape">
+                    <div class="shape-visual"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=300&fit=crop" alt="Буханка"></div>
+                    <div class="shape-name">Буханка</div>
+                </label>
+            </div>
+
+            <div class="form-label">Добавьте ингредиенты (в сумме ≤ 100%):</div>
+            
+            <!-- Слайдеры ингредиентов -->
+            <div class="slider-container">
+                <div class="slider-item">
+                    <label>Рожь</label>
+                    <input type="range" name="rye" min="0" max="100" value="25">
+                    <span class="slider-val">25%</span>
+                </div>
+                <div class="slider-item">
+                    <label>Пшено</label>
+                    <input type="range" name="millet" min="0" max="100" value="25">
+                    <span class="slider-val">25%</span>
+                </div>
+                <div class="slider-item">
+                    <label>Овес</label>
+                    <input type="range" name="oats" min="0" max="100" value="25">
+                    <span class="slider-val">25%</span>
+                </div>
+                <div class="slider-item">
+                    <label>Ячмень</label>
+                    <input type="range" name="barley" min="0" max="100" value="25">
+                    <span class="slider-val">25%</span>
+                </div>
+            </div>
+
+            <div class="nutrition-large">
+                <h2>Пищевая ценность</h2>
+                <div class="nutrition-items">
+                    <div class="nutrition-item"><span class="val">0 г</span><span class="name">Белки</span></div>
+                    <div class="nutrition-item"><span class="val">0 г</span><span class="name">Жиры</span></div>
+                    <div class="nutrition-item"><span class="val">0 г</span><span class="name">Углеводы</span></div>
+                </div>
+            </div>
+            <a href="cart.html" class="btn-large">В корзину</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Сайт выполнен по заказу Хлебозавода №1</p>
+            <p class="author">Федченко Александр Дмитриевич</p>
+        </div>
+    </footer>
+</body>
+</html>
