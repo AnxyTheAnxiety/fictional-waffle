@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь - Хлебозавод №1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=100&h=100&fit=crop" alt="Логотип Хлебозавод №1">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="catalog.html" class="nav-link">Каталог</a>
+            <a href="constructor.html" class="nav-link">Конструктор хлеба</a>
+            <a href="about.html" class="nav-link">О нас</a>
+            <a href="cart.html" class="nav-link">Корзина</a>
+            <a href="blog.html" class="nav-link">Блог</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+    <main class="container section">
+        <h1 class="section-title">Связаться с нами</h1>
+        
+        <div class="contact-wrapper">
+            <section class="contact-form">
+                <p><strong>Внимание:</strong> Мы ценим каждое обращение. <em>Пожалуйста, заполните форму ниже</em>, и наш специалист ответит вам в течение <mark>рабочего дня</mark>.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="username">Ваше имя</label>
+                        <input type="text" id="username" name="username" placeholder="Например, Анна Петрова" required minlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="useremail">Электронная почта</label>
+                        <input type="email" id="useremail" name="useremail" placeholder="example@mail.ru" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usermessage">Текст сообщения</label>
+                        <textarea id="usermessage" name="usermessage" rows="5" placeholder="Опишите ваш вопрос, предложение или отзыв..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-cart btn-submit">Отправить</button>
+                </form>
+                <p style="margin-top: 15px; text-align: center;"><small>* Нажимая кнопку «Отправить», вы соглашаетесь на обработку персональных данных.</small></p>
+            </section>
+
+            <aside class="contact-aside">
+                <h3>Реквизиты и часы работы</h3>
+                <p>📍 г. Кострома, ул. Хлебопечоночная, д 12, стр 1</p>
+                <p>📞 +7 (XXX) XXX-XX-XX (Приёмная)</p>
+                <p>📧 info@hlebzavod.ru</p>
+                <p>⏰ Пн-Пт: 09:00 – 18:00<br>Сб-Вс: выходной</p>
+                <p><em>Мы всегда рады конструктивной критике!</em></p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Сайт выполнен по заказу Хлебозавода №1</p>
+            <p class="author">Федченко Александр Дмитриевич</p>
+        </div>
+    </footer>
+</body>
+</html>
